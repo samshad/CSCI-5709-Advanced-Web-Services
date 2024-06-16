@@ -1,0 +1,58 @@
+/* Styling for Login Component */
+.login-container {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+
+.login-container form div {
+  margin-bottom: 10px;
+}
+
+/* Styling for Profile Listing Component */
+.profile-listing-container {
+  padding: 20px;
+}
+
+.profile-listing-container input {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.user-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+}
+
+.user-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Styling for Profile Detail Component */
+.profile-detail-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-detail-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
