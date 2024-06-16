@@ -1,4 +1,25 @@
-# Getting Started with Create React App
+# Tutorial 4
+
+- _Date Created_: 15 June 2024
+- _Last Modification Date_: 15 June 2024
+- _Hosted Tutorial 4 URL_: <https://samshadt4.netlify.app/>
+- _Gitlab Tutorial URL_: <https://git.cs.dal.ca/msrahman/csci-5709-tutorials>
+
+## Authors
+
+- Md Samshad Rahman (samshad@dal.ca)
+
+## Deployment
+
+I created a new private repository on GitHub for tutorial 4 deployment and pushed my code to it. Then, I imported the tutorial 4 code from GitHub into netlify and configured the build settings to deploy the app. Finally, it was deployed and is available with the provided link.
+
+## Built With
+
+- [React](https://legacy.reactjs.org/docs/getting-started.html/) - The web framework used
+- [npm](https://docs.npmjs.com//) - Dependency Management
+- [react-router-dom](https://reactrouter.com/web/guides/quick-start) - Routing
+- [Netlify](https://docs.netlify.com/) - Deployment
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
