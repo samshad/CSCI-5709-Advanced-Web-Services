@@ -73,6 +73,11 @@ def add_user():
     Returns:
         JSON response with a message and success status.
     """
+    if not request.json or 'email' not in request.json or 'firstName' not in request.json:
+        return jsonify({
+            "message": "Invalid request data",
+            "success": False
+        }), 400
     try:
         new_user = request.json
         users = fetch_users()
@@ -101,6 +106,11 @@ def update_user(user_id):
     Returns:
         JSON response with a message and success status.
     """
+    if not request.json or ('email' not in request.json and 'firstName' not in request.json):
+        return jsonify({
+            "message": "Invalid request data",
+            "success": False
+        }), 400
     try:
         updated_data = request.json
         users = fetch_users()
@@ -150,6 +160,24 @@ def get_user(user_id):
             "message": f"Error retrieving user: {str(e)} !!!",
             "success": False
         }), 500
+
+
+@app.errorhandler(405)
+def method_not_allowed(error):
+    """Handle Method Not Allowed errors."""
+    return jsonify({
+        "message": "Method Not Allowed",
+        "success": False
+    }), 405
+
+
+@app.errorhandler(404)
+def not_found(error):
+    """Handle Not Found errors."""
+    return jsonify({
+        "message": "Not Found",
+        "success": False
+    }), 404
 
 
 if __name__ == "__main__":
