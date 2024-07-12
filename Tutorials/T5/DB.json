@@ -1,0 +1,24 @@
+{
+    "users": [
+        {
+            "id": "1",
+            "email": "abc@abc.ca",
+            "firstName": "ABC"
+        },
+        {
+            "id": "2",
+            "email": "xyz@xyz.ca",
+            "firstName": "XYZ"
+        },
+        {
+            "email": "xx@yy.zz",
+            "firstName": "asdf",
+            "id": "3"
+        },
+        {
+            "email": "xx3@lsdfw.com",
+            "firstName": "xcc",
+            "id": "4"
+        }
+    ]
+}
