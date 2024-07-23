@@ -1,0 +1,5 @@
+python-dotenv
+faker
+Flask
+Flask-PyMongo
+pymongo
